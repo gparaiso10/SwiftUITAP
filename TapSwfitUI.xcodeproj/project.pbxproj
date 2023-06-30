@@ -16,8 +16,12 @@
 		8B050BAE2A39CC4B009F6D94 /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B050BAD2A39CC4B009F6D94 /* HourCell.swift */; };
 		8B050BB02A39DF67009F6D94 /* VooCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B050BAF2A39DF67009F6D94 /* VooCell.swift */; };
 		8B050BB22A404AE2009F6D94 /* VooHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B050BB12A404AE2009F6D94 /* VooHeaderCell.swift */; };
-		8BCC2E332A4D9EFB00297650 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E322A4D9EFB00297650 /* Price.swift */; };
 		8BCC2E352A4ECC0800297650 /* VooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E342A4ECC0800297650 /* VooViewModel.swift */; };
+		8BCC2E372A4ED83100297650 /* VooListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E362A4ED83100297650 /* VooListView.swift */; };
+		8BCC2E392A4ED89100297650 /* VooListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E382A4ED89100297650 /* VooListViewModel.swift */; };
+		8BCC2E3B2A4EE2A800297650 /* HoursCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E3A2A4EE2A800297650 /* HoursCellViewModel.swift */; };
+		8BCC2E3D2A4EF19E00297650 /* PriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E3C2A4EF19E00297650 /* PriceViewModel.swift */; };
+		8BCC2E3F2A4EF49A00297650 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E3E2A4EF49A00297650 /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +35,12 @@
 		8B050BAD2A39CC4B009F6D94 /* HourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCell.swift; sourceTree = "<group>"; };
 		8B050BAF2A39DF67009F6D94 /* VooCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooCell.swift; sourceTree = "<group>"; };
 		8B050BB12A404AE2009F6D94 /* VooHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooHeaderCell.swift; sourceTree = "<group>"; };
-		8BCC2E322A4D9EFB00297650 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		8BCC2E342A4ECC0800297650 /* VooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooViewModel.swift; sourceTree = "<group>"; };
+		8BCC2E362A4ED83100297650 /* VooListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooListView.swift; sourceTree = "<group>"; };
+		8BCC2E382A4ED89100297650 /* VooListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooListViewModel.swift; sourceTree = "<group>"; };
+		8BCC2E3A2A4EE2A800297650 /* HoursCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursCellViewModel.swift; sourceTree = "<group>"; };
+		8BCC2E3C2A4EF19E00297650 /* PriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewModel.swift; sourceTree = "<group>"; };
+		8BCC2E3E2A4EF49A00297650 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 				8B050BAD2A39CC4B009F6D94 /* HourCell.swift */,
 				8B050BAF2A39DF67009F6D94 /* VooCell.swift */,
 				8B050BB12A404AE2009F6D94 /* VooHeaderCell.swift */,
+				8BCC2E362A4ED83100297650 /* VooListView.swift */,
 			);
 			path = CellViews;
 			sourceTree = "<group>";
@@ -99,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8B050BAB2A39C948009F6D94 /* Voo.swift */,
-				8BCC2E322A4D9EFB00297650 /* Price.swift */,
+				8BCC2E3E2A4EF49A00297650 /* Price.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				8BCC2E342A4ECC0800297650 /* VooViewModel.swift */,
+				8BCC2E382A4ED89100297650 /* VooListViewModel.swift */,
+				8BCC2E3A2A4EE2A800297650 /* HoursCellViewModel.swift */,
+				8BCC2E3C2A4EF19E00297650 /* PriceViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -183,14 +195,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B050BAE2A39CC4B009F6D94 /* HourCell.swift in Sources */,
-				8BCC2E332A4D9EFB00297650 /* Price.swift in Sources */,
 				8BCC2E352A4ECC0800297650 /* VooViewModel.swift in Sources */,
+				8BCC2E372A4ED83100297650 /* VooListView.swift in Sources */,
+				8BCC2E3B2A4EE2A800297650 /* HoursCellViewModel.swift in Sources */,
 				8B050BB22A404AE2009F6D94 /* VooHeaderCell.swift in Sources */,
 				8B050BAC2A39C948009F6D94 /* Voo.swift in Sources */,
 				8B050BB02A39DF67009F6D94 /* VooCell.swift in Sources */,
 				8B050B9D2A39BC11009F6D94 /* ContentView.swift in Sources */,
+				8BCC2E3F2A4EF49A00297650 /* Price.swift in Sources */,
 				8B050BAA2A39BC4B009F6D94 /* PriceCell.swift in Sources */,
 				8B050B9B2A39BC11009F6D94 /* TapSwfitUIApp.swift in Sources */,
+				8BCC2E3D2A4EF19E00297650 /* PriceViewModel.swift in Sources */,
+				8BCC2E392A4ED89100297650 /* VooListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

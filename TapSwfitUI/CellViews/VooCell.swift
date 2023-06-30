@@ -12,10 +12,15 @@ struct VooCell: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            HoursCell(horaSaida: vooVM.horaSaida, horaChegada: vooVM.horaChegada, localSaida: vooVM.localSaida, localChegada: vooVM.localChegada, id: vooVM.id)
+            HoursCell(HoursCellVM: HoursCellViewModel(horaSaida: vooVM.horaSaida, horaChegada: vooVM.horaChegada, localSaida: vooVM.localSaida, localChegada: vooVM.localChegada, id: vooVM.id))
+            
             HStack{
-                PriceCell(classe: vooVM.classe1, preco: vooVM.preco1).padding()
-                PriceCell(classe: vooVM.classe2, preco: vooVM.preco2).padding()
+                PriceCell(priceVM:
+                            PriceViewModel(price:
+                                            Price(classe: vooVM.classe1, preco: vooVM.preco1))).padding()
+                PriceCell(priceVM:
+                            PriceViewModel(price:
+                                            Price(classe: vooVM.classe2, preco: vooVM.preco2))).padding()
             }
 
             HStack{

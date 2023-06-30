@@ -9,8 +9,7 @@ import SwiftUI
 
 struct PriceCell: View {
     
-    var classe: Classe
-    var preco: Double
+    let priceVM: PriceViewModel
     
     var body: some View {
         ZStack {
@@ -22,7 +21,7 @@ struct PriceCell: View {
                 HStack {
                     VStack {
                         Spacer()
-                        Text(classe.rawValue).font(.system(size: 20))
+                        Text(priceVM.classe).font(.system(size: 20))
                     }
                     VStack {
                         Spacer()
@@ -30,7 +29,7 @@ struct PriceCell: View {
                     }
                 }
                 VStack {
-                    Text("\(String(format: "%.2f" ,preco))€").bold().font(.system(size: 18))
+                    Text("\(String(format: "%.2f" ,priceVM.preco))€").bold().font(.system(size: 18))
                     Spacer()
                 }
             }
@@ -41,6 +40,6 @@ struct PriceCell: View {
 
 struct PriceCell_Previews: PreviewProvider {
     static var previews: some View {
-        PriceCell(classe: .executive, preco: 994.5)
+        PriceCell(priceVM: PriceViewModel(price: Price(classe: .executive, preco: 994.5)))
     }
 }
