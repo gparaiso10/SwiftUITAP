@@ -16,6 +16,8 @@
 		8B050BAE2A39CC4B009F6D94 /* HourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B050BAD2A39CC4B009F6D94 /* HourCell.swift */; };
 		8B050BB02A39DF67009F6D94 /* VooCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B050BAF2A39DF67009F6D94 /* VooCell.swift */; };
 		8B050BB22A404AE2009F6D94 /* VooHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B050BB12A404AE2009F6D94 /* VooHeaderCell.swift */; };
+		8BCC2E332A4D9EFB00297650 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E322A4D9EFB00297650 /* Price.swift */; };
+		8BCC2E352A4ECC0800297650 /* VooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E342A4ECC0800297650 /* VooViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		8B050BAD2A39CC4B009F6D94 /* HourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourCell.swift; sourceTree = "<group>"; };
 		8B050BAF2A39DF67009F6D94 /* VooCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooCell.swift; sourceTree = "<group>"; };
 		8B050BB12A404AE2009F6D94 /* VooHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooHeaderCell.swift; sourceTree = "<group>"; };
+		8BCC2E322A4D9EFB00297650 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		8BCC2E342A4ECC0800297650 /* VooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,11 @@
 		8B050B992A39BC11009F6D94 /* TapSwfitUI */ = {
 			isa = PBXGroup;
 			children = (
-				8B050BA82A39BC21009F6D94 /* Cells */,
+				8BCC2E312A4D94C600297650 /* ViewModels */,
+				8BCC2E302A4D94BB00297650 /* Models */,
+				8B050BA82A39BC21009F6D94 /* CellViews */,
 				8B050B9A2A39BC11009F6D94 /* TapSwfitUIApp.swift */,
 				8B050B9C2A39BC11009F6D94 /* ContentView.swift */,
-				8B050BAB2A39C948009F6D94 /* Voo.swift */,
 				8B050B9E2A39BC13009F6D94 /* Assets.xcassets */,
 				8B050BA02A39BC13009F6D94 /* Preview Content */,
 			);
@@ -79,7 +84,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8B050BA82A39BC21009F6D94 /* Cells */ = {
+		8B050BA82A39BC21009F6D94 /* CellViews */ = {
 			isa = PBXGroup;
 			children = (
 				8B050BA92A39BC4B009F6D94 /* PriceCell.swift */,
@@ -87,7 +92,24 @@
 				8B050BAF2A39DF67009F6D94 /* VooCell.swift */,
 				8B050BB12A404AE2009F6D94 /* VooHeaderCell.swift */,
 			);
-			path = Cells;
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		8BCC2E302A4D94BB00297650 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B050BAB2A39C948009F6D94 /* Voo.swift */,
+				8BCC2E322A4D9EFB00297650 /* Price.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BCC2E312A4D94C600297650 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8BCC2E342A4ECC0800297650 /* VooViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B050BAE2A39CC4B009F6D94 /* HourCell.swift in Sources */,
+				8BCC2E332A4D9EFB00297650 /* Price.swift in Sources */,
+				8BCC2E352A4ECC0800297650 /* VooViewModel.swift in Sources */,
 				8B050BB22A404AE2009F6D94 /* VooHeaderCell.swift in Sources */,
 				8B050BAC2A39C948009F6D94 /* Voo.swift in Sources */,
 				8B050BB02A39DF67009F6D94 /* VooCell.swift in Sources */,

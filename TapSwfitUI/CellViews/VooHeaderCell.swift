@@ -34,5 +34,5 @@ struct VooHeaderCell: View {
 struct VooHeaderCell_Previews: PreviewProvider {
     static var previews: some View {
         VooHeaderCell(localSaida: "OPO", localDestino: "FAO")
-    }
+        .previewLayout(.sizeThatFits)}
 }

@@ -22,6 +22,7 @@ struct HoursCell: View {
                 Text(localSaida)
             }.padding()
             Text("------->")
+            
 
 
             VStack(alignment: .leading){
@@ -36,7 +37,7 @@ struct HoursCell: View {
 
 struct HoursCell_Previews: PreviewProvider {
     static var previews: some View {
-        HoursCell(horaSaida: DateComponents(hour: 05, minute: 10), horaChegada: DateComponents(hour: 6, minute: 40), localSaida: "OPO", localChegada: "FAO", id:"TP 1980")
+        HoursCell(horaSaida: DateComponents(hour: 05, minute: 10), horaChegada: DateComponents(hour: 6, minute: 40), localSaida: "OPO", localChegada: "FAO", id:"TP 1980").previewLayout(.sizeThatFits)
     }
 }
 
