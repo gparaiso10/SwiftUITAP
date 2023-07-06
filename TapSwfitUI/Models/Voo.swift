@@ -13,16 +13,19 @@ struct Voo{
     var horaChegada: DateComponents
     var localSaida: String
     var localChegada: String
-    var classes: [Classe]
-    var precos: [Double]
+    var operadora: String
+    var iconImage: String
+    var precos: [Price]
     
 }
+
+
 
 extension Voo{
     static func all() -> [Voo]{
         return [
-            Voo(id: "TP 1980", horaSaida: DateComponents(hour: 5, minute: 10), horaChegada: DateComponents(hour: 6, minute: 40), localSaida: "OPO", localChegada: "FAO", classes: [.economy, .executive], precos: [64.03, 994.50]),
-            Voo(id: "TP 8535",horaSaida: DateComponents(hour: 8, minute: 15), horaChegada: DateComponents(hour: 10, minute: 0), localSaida: "OPO", localChegada: "FAO", classes: [.economy, .executive], precos: [64.03, 994.50])
+            Voo(id: "TP 1980", horaSaida: DateComponents(hour: 5, minute: 10), horaChegada: DateComponents(hour: 6, minute: 40), localSaida: "OPO", localChegada: "FAO", operadora: "TAP Air Portugal", iconImage: "TapIcon", precos: [Price(classe: .economy, preco: 64.03),                                                                                                    Price(classe: .executive, preco: 994.50)]),
+            Voo(id: "TP 8535",horaSaida: DateComponents(hour: 8, minute: 15), horaChegada: DateComponents(hour: 10, minute: 0), localSaida: "OPO", localChegada: "FAO", operadora: "TAP Air Portugal", iconImage: "TapIcon", precos: [Price(classe: .economy, preco: 64.03),Price(classe: .executive, preco: 994.50)])
         ]
     }
 }

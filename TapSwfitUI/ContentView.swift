@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView{
             
             VStack(alignment: .leading){
-                VooHeaderCell(localSaida: "OPO", localDestino: "FAO")
+                VooHeaderCell(localSaida: "OPO", localDestino: "FAO", numeroPassageiros: 1, numeroVoos: Voo.all().count)
                 Spacer()
                 VooListView(voos: vooListVM.voos)
             }

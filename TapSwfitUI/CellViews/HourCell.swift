@@ -14,15 +14,12 @@ struct HoursCell: View {
     var body: some View {
         
         HStack{
-            VStack(alignment: .leading){
-                HoursCellVM.getHoraFormatted(hora: HoursCellVM.horaSaida).font(.system(size: 20)).bold()
-                Text(HoursCellVM.localSaida)
-            }
-            Text("------->")
-            VStack(alignment: .leading){
-                HoursCellVM.getHoraFormatted(hora: HoursCellVM.horaChegada).font(.system(size: 20)).bold()
-                Text(HoursCellVM.localChegada)
-            }
+            HourHeaderCell(title: HoursCellVM.getHoraFormatted(hora: HoursCellVM.horaSaida), subtitle: HoursCellVM.localSaida)
+            Image(systemName: "arrow.right")
+                        .foregroundColor(.black)
+                        .font(.system(size: 91))
+                        .frame(width: 96, height: 16)
+            HourHeaderCell(title: HoursCellVM.getHoraFormatted(hora: HoursCellVM.horaChegada), subtitle: HoursCellVM.localChegada)
             Spacer()
             VStack(alignment: .trailing){
                 Text("\(HoursCellVM.timeDifference.hour!)h\(HoursCellVM.timeDifference.minute!)m").font(.system(size: 12))

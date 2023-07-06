@@ -10,16 +10,18 @@ import SwiftUI
 struct VooHeaderCell: View {
     let localSaida: String
     let localDestino: String
+    let numeroPassageiros: Int
+    let numeroVoos: Int
     
     var body: some View {
         HStack{
             VStack(alignment: .leading){
                 Text("Voo de ida").font(.title).bold()
-                Text("\(localSaida) - \(localDestino) 1 Passageiro")
+                Text("\(localSaida) - \(localDestino) \(numeroPassageiros) Passageiro")
             }.padding()
             Spacer()
             VStack{
-                Text("4")
+                Text("\(numeroVoos)")
                     .foregroundColor(.white).bold()
                     .font(.system(size: 20))
                     .padding()
@@ -33,6 +35,6 @@ struct VooHeaderCell: View {
 
 struct VooHeaderCell_Previews: PreviewProvider {
     static var previews: some View {
-        VooHeaderCell(localSaida: "OPO", localDestino: "FAO")
+        VooHeaderCell(localSaida: "OPO", localDestino: "FAO", numeroPassageiros: 1, numeroVoos: 4)
         .previewLayout(.sizeThatFits)}
 }

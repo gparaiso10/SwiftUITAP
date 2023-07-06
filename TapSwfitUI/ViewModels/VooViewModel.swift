@@ -30,19 +30,16 @@ struct VooViewModel{
         return voo.localChegada
     }
     
-    var classe1: Classe{
-        return voo.classes[0]
+    var operadora: String {
+        return "Operado por \(voo.operadora)"
     }
     
-    var classe2: Classe{
-        return voo.classes[1]
+    var iconImageURL: String{
+        return voo.iconImage
     }
     
-    var preco1: Double{
-        return voo.precos[0]
+    var precos: [PriceViewModel]{
+        return voo.precos.map { PriceViewModel(price: $0) }
     }
     
-    var preco2: Double{
-        return voo.precos[1]
-    }
 }

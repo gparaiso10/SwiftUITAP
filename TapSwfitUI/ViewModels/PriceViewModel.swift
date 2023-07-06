@@ -9,6 +9,7 @@ import Foundation
 
 struct PriceViewModel{
     let price: Price
+    let id = UUID()
     
     var classe: String{
         return price.classe.rawValue

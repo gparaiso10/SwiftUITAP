@@ -44,8 +44,8 @@ struct HoursCellViewModel{
         return difference
     }
     
-    func getHoraFormatted(hora: DateComponents) -> Text{
-        return Text("\(String(format: "%02d" ,hora.hour!)):\(String(format: "%02d" ,hora.minute!))")
+    func getHoraFormatted(hora: DateComponents) -> String{
+        return "\(String(format: "%02d" ,hora.hour!)):\(String(format: "%02d" ,hora.minute!))"
     }
 
     
