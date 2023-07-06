@@ -15,10 +15,11 @@ struct HoursCell: View {
         
         HStack{
             HourHeaderCell(title: HoursCellVM.getHoraFormatted(hora: HoursCellVM.horaSaida), subtitle: HoursCellVM.localSaida)
-            Image(systemName: "arrow.right")
-                        .foregroundColor(.black)
-                        .font(.system(size: 91))
-                        .frame(width: 96, height: 16)
+            Arrow()
+                        .stroke(.black, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+                        .frame(width: 100, height: 100)
+                        
+                        
             HourHeaderCell(title: HoursCellVM.getHoraFormatted(hora: HoursCellVM.horaChegada), subtitle: HoursCellVM.localChegada)
             Spacer()
             VStack(alignment: .trailing){
