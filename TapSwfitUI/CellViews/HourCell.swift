@@ -26,7 +26,7 @@ struct HoursCell: View {
                 Text("\(HoursCellVM.timeDifference.hour!)h\(HoursCellVM.timeDifference.minute!)m").font(.system(size: 12))
                 Text(HoursCellVM.id)
                     .font(.subheadline)
-                    .foregroundColor(.green)
+                    .foregroundColor(Color(red: 0.07, green: 0.44, blue: 0.27))
                     .underline()
             }.padding()
         }.padding()

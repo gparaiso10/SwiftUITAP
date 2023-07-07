@@ -19,6 +19,9 @@
 		8B58CB402A56D57400813581 /* HourHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58CB3F2A56D57400813581 /* HourHeaderCell.swift */; };
 		8B58CB422A56D82400813581 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58CB412A56D82400813581 /* FooterCell.swift */; };
 		8B58CB462A56FB1600813581 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58CB452A56FB1600813581 /* ArrowView.swift */; };
+		8B58CB482A58076200813581 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58CB472A58076200813581 /* ListHeaderView.swift */; };
+		8B58CB4C2A581A0000813581 /* MainFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58CB4B2A581A0000813581 /* MainFooter.swift */; };
+		8B58CB4E2A581F4300813581 /* ExclusivePricesModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B58CB4D2A581F4300813581 /* ExclusivePricesModal.swift */; };
 		8BCC2E352A4ECC0800297650 /* VooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E342A4ECC0800297650 /* VooViewModel.swift */; };
 		8BCC2E372A4ED83100297650 /* VooListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E362A4ED83100297650 /* VooListView.swift */; };
 		8BCC2E392A4ED89100297650 /* VooListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC2E382A4ED89100297650 /* VooListViewModel.swift */; };
@@ -41,6 +44,9 @@
 		8B58CB3F2A56D57400813581 /* HourHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHeaderCell.swift; sourceTree = "<group>"; };
 		8B58CB412A56D82400813581 /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
 		8B58CB452A56FB1600813581 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		8B58CB472A58076200813581 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		8B58CB4B2A581A0000813581 /* MainFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFooter.swift; sourceTree = "<group>"; };
+		8B58CB4D2A581F4300813581 /* ExclusivePricesModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivePricesModal.swift; sourceTree = "<group>"; };
 		8BCC2E342A4ECC0800297650 /* VooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooViewModel.swift; sourceTree = "<group>"; };
 		8BCC2E362A4ED83100297650 /* VooListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooListView.swift; sourceTree = "<group>"; };
 		8BCC2E382A4ED89100297650 /* VooListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VooListViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				8B58CB3F2A56D57400813581 /* HourHeaderCell.swift */,
 				8B58CB412A56D82400813581 /* FooterCell.swift */,
 				8B58CB452A56FB1600813581 /* ArrowView.swift */,
+				8B58CB472A58076200813581 /* ListHeaderView.swift */,
+				8B58CB4B2A581A0000813581 /* MainFooter.swift */,
+				8B58CB4D2A581F4300813581 /* ExclusivePricesModal.swift */,
 			);
 			path = CellViews;
 			sourceTree = "<group>";
@@ -208,11 +217,14 @@
 				8BCC2E352A4ECC0800297650 /* VooViewModel.swift in Sources */,
 				8BCC2E372A4ED83100297650 /* VooListView.swift in Sources */,
 				8BCC2E3B2A4EE2A800297650 /* HoursCellViewModel.swift in Sources */,
+				8B58CB4C2A581A0000813581 /* MainFooter.swift in Sources */,
 				8B050BB22A404AE2009F6D94 /* VooHeaderCell.swift in Sources */,
+				8B58CB482A58076200813581 /* ListHeaderView.swift in Sources */,
 				8B050BAC2A39C948009F6D94 /* Voo.swift in Sources */,
 				8B050BB02A39DF67009F6D94 /* VooCell.swift in Sources */,
 				8B050B9D2A39BC11009F6D94 /* ContentView.swift in Sources */,
 				8BCC2E3F2A4EF49A00297650 /* Price.swift in Sources */,
+				8B58CB4E2A581F4300813581 /* ExclusivePricesModal.swift in Sources */,
 				8B050BAA2A39BC4B009F6D94 /* PriceCell.swift in Sources */,
 				8B58CB422A56D82400813581 /* FooterCell.swift in Sources */,
 				8B050B9B2A39BC11009F6D94 /* TapSwfitUIApp.swift in Sources */,

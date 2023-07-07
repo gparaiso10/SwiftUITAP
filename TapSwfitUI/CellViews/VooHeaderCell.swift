@@ -20,15 +20,14 @@ struct VooHeaderCell: View {
                 Text("\(localSaida) - \(localDestino) \(numeroPassageiros) Passageiro")
             }.padding()
             Spacer()
-            VStack{
                 Text("\(numeroVoos)")
                     .foregroundColor(.white).bold()
                     .font(.system(size: 20))
                     .padding()
-                    .background(Color.green)
+                    .background(Color(red: 0.07, green: 0.44, blue: 0.27))
                     .clipShape(Circle())
+            Image("17").padding(.trailing)
 
-            }.padding()
         }
     }
 }
